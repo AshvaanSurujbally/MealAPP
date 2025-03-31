@@ -1,6 +1,6 @@
 Here is the link to the Github project titled MealApp https://github.com/AshvaanSurujbally/MealAPP
 
-Here is the link to the Youtube that has been created as a demonstration of the Meal APP: https://youtu.be/-8DugR7c6_Y
+Here is the link to the Youtube that has been created as a demonstration of the Meal APP: 
 
 REPORT:
 
