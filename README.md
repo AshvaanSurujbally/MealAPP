@@ -3,6 +3,7 @@ Here is the link to the Github project titled MealApp https://github.com/Ashvaan
 Here is the link to the Youtube that has been created as a demonstration of the Meal APP: https://youtu.be/-8DugR7c6_Y
 
 REPORT:
+
 This app has been created for a close friend Hera. She has been struggling lately to decide what food to eat on her busy days. She has approached me to help her with this issue. she has asked me to develop an app that  
 can help her decide what to cook/eat. The main purpose of the app is that it should be able for her to input the time of day and it will display appropriate meal suggestions.The inputs will be Morning, Mid-morning,
 afternoon, Mid-afternoon, dinner and snack. One of the major considerations that I have taken into account is casing, the app will work with any casing as long as it is a valid input. I have designed the app to be simple and user 
