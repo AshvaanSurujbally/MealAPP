@@ -2,6 +2,7 @@ package vcmsa.ashvaan12me.mealapp
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -10,6 +11,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -32,7 +34,9 @@ class MainActivity : AppCompatActivity() {
 
         // now we need the to get the user to input the time of day
         bTGo.setOnClickListener {
+
             val time = timeOfDay.text.toString()
+            Log.d("bTGo", "Time of day: $time")
             // now we check what the user is valid time of day (AI assisted and corrected)
             if (time.equals("Morning", ignoreCase = true) ||
                 time.equals("Mid-morning", ignoreCase = true) ||
