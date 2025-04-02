@@ -20,13 +20,18 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     
-    - name: Set up Gradle
+    - name: Set up Gradle Wrapper
+      run: |
+        # Make sure the Gradle wrapper is up to date
+        ./gradlew wrapper --gradle-version 7.5
+        
+    - name: Install Gradle 7.5
       run: |
         wget https://services.gradle.org/distributions/gradle-7.5-bin.zip
         unzip gradle-7.5-bin.zip
         sudo mv gradle-7.5 /opt/gradle
         sudo ln -s /opt/gradle/bin/gradle /usr/bin/gradle
-        gradle -v # Check Gradle version to ensure correct setup
+        gradle -v # Check the Gradle version
 
     - name: Cache Gradle dependencies
       uses: actions/cache@v3
@@ -50,5 +55,6 @@ jobs:
     
     - name: Run Unit Tests
       run: ./gradlew test
+
 
 
